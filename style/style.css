@@ -1,0 +1,494 @@
+/* all layout */
+section > div {
+    max-width:1200px; min-width:320px;
+    margin:0 auto;
+    padding: 100px 0;
+    text-align: center;
+}
+/* 예매하기 버튼 */
+section > div .ticketing_btn {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    gap: 10px;
+}
+section > div .ticketing_btn span {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color:#432C7A;
+}
+section > div .ticketing_btn img {
+    width: 30px;
+    height: 30px;
+}
+/* 1. title */
+.title_bg {
+    background:url(../images/title_bg.png) no-repeat center;
+    background-size:cover;
+}
+.title_bg .title {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap:50px;
+}
+.title_bg .title h1 {}
+.title_bg .title h1 img {}
+.title_bg .title p {color: #FFF; font-size: 1.3rem;}
+.title_bg .title .ticketing_btn {}
+.title_bg .title .ticketing_btn span {}
+.title_bg .title .ticketing_btn img {}
+/* 타이틀 */
+* h2{
+    font-family: 'Cafe24Ssurround';
+    font-size: 3.15rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+section > div h2 span {
+    font-family: 'Cafe24Ssurround';
+    font-size: 2.35rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+section > div > .top,
+section > div > h2 {margin-bottom: 100px;}
+/* sub_title/content_txt*/
+/* .ticket_bg .ticket .top .product_wrap li .sub_title h3,
+.ticket_bg .ticket .btm .title h3,
+.event_bg .event .contents li .desc h3,
+.area_bg .area .item .btm h3,
+.attraction_bg .attraction .contents li h3,
+.quiz_bg .quiz h3,
+.shop_bg .shop .contents li h3,
+.route_bg .route .train li h3,
+.route_bg .route h3,
+.route_bg .route .hotel .item h3,
+.faq_bg .faq .btm li h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;} */
+* h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+.faq_bg .faq .btm li h3 em {}
+.faq_bg .faq .btm li h3 span {}
+* .contents_txt {
+    line-height: 30px; letter-spacing: -0.02em;
+}
+/* 2. 티켓구매 */
+.ticket_bg {
+    background-color: #432C7A;
+}
+.ticket_bg .ticket {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+.ticket_bg .ticket .top {}
+.ticket_bg .ticket .top h2 {color:#FF8FB1;}
+.ticket_bg .ticket .product_wrap {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.ticket_bg .ticket .product_wrap li {}
+.ticket_bg .ticket .product_wrap li .sub_title {
+    background: no-repeat center;
+    width:386px; height: 234px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.ticket_bg .ticket .product_wrap li:first-child .sub_title {background-image:url(../images/ticket_1.jpg);}
+.ticket_bg .ticket .product_wrap li:last-child .sub_title {background-image:url(../images/ticket_2.jpg);}
+.ticket_bg .ticket .product_wrap li .sub_title h3 {
+    padding-top: 141px;
+    color: #fff;
+}
+.ticket_bg .ticket .product_wrap li .contents_txt {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 30px 0;
+    width:386px; height: 277px;
+    text-align: left; 
+}
+.ticket_bg .ticket .product_wrap li .contents_txt .buy_btn {
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    padding: 5px 70px;
+    background-color: #432C7A;
+    border-radius: 20px;
+}
+.ticket_bg .ticket .product_wrap li .contents_txt .buy_btn span {color: #FFF;}
+.ticket_bg .ticket .product_wrap li .contents_txt .buy_btn img {width: 30px; height: 30px;}
+.ticket_bg .ticket .btm {}
+.ticket_bg .ticket .btm .title {}
+.ticket_bg .ticket .btm .title h3 {color:#fff;}
+.ticket_bg .ticket .btm .title .contents_txt {margin: 30px 0; color:#fff;}
+.ticket_bg .ticket .btm .contents {
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap:50px;
+}
+.ticket_bg .ticket .btm .contents .item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.ticket_bg .ticket .btm .contents .item img {width: 110px; height: 110px;}
+.ticket_bg .ticket .btm .contents .item span {
+    color:#FF8FB1;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.ticket_bg .ticket .btm .contents .item:nth-child(3) span {color:#fff;}
+.ticket_bg .ticket .btm .contents .arrow {}
+.ticket_bg .ticket .btm .contents .arrow img {width: 50px; height: 50px;}
+/* 3. 이벤트 */
+.event_bg {background: #F1F1F1;}
+.event_bg .event {}
+.event_bg .event .top {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    position: relative;
+}
+.event_bg .event .top h2 {color:#80489C;}
+.event_bg .event .top .share_btn {
+    position: absolute;
+    right: 0;
+    width:179px;
+    display: flex;
+    flex-flow:row nowrap;
+    padding: 15px 20px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 40px;
+    background: #80489C;
+}
+.event_bg .event .top .share_btn img {width: 30px; height: 30px;}
+.event_bg .event .top .share_btn span {color:#fff;}
+.event_bg .event .contents {
+    display: flex;
+    flex-flow:column nowrap;
+    gap:50px;
+}
+.event_bg .event .contents li {
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    position: relative;
+}
+.event_bg .event .contents li:nth-child(2n) {flex-flow: row-reverse nowrap;}
+.event_bg .event .contents li .photo {width: 587px; height: 320px;}
+.event_bg .event .contents li .photo img {width:100%;}
+.event_bg .event .contents li .desc {
+    padding: 40px;
+    background-color: #fff; border-radius: 30px;
+    position: absolute;
+    text-align: left;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.event_bg .event .contents li:nth-child(odd) .desc {right: 0;}
+.event_bg .event .contents li:nth-child(even) .desc {left: 0;}
+.event_bg .event .contents li .desc h3 {color:#432C7A;}
+.event_bg .event .contents li .desc .date {padding: 30px 0; font-weight: 500;}
+.event_bg .event .contents li .desc .contents_txt {
+    width: 596px;
+}
+/* 4. 에어리어 */
+.area_bg {
+    background:url(../images/area_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.area_bg .area {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+.area_bg .area h2 {color:#fff;}
+.area_bg .area h2 span {}
+.area_bg .area .contents {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-content: center;
+    gap:20px;
+}
+.area_bg .area .contents .item {
+    margin-bottom: 100px;
+}
+.area_bg .area .contents .item .top {}
+.area_bg .area .contents .item .top img {}
+.area_bg .area .contents .item .btm {
+    margin-top: -5px;
+    background:url(../images/area_txt_bg.png) no-repeat center;
+    width: 488px; height: 176px;
+    padding: 56px 0 26px 0;
+}
+.area_bg .area .contents .item .btm h3 {}
+.area_bg .area .contents .item .btm .contents_txt {}
+.area_bg .area .ticketing_btn {}
+.area_bg .area .ticketing_btn span {}
+.area_bg .area .ticketing_btn img {}
+/* 5. 어트랙션 */
+.attraction_bg {
+    background-color: #80489C;
+}
+.attraction_bg .attraction {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+.attraction_bg .attraction h2 {color: #FF8FB1;}
+.attraction_bg .attraction h2 span {color:#fff;}
+.attraction_bg .attraction .contents {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    width: 1200px;
+    margin-bottom: 100px;
+}
+.attraction_bg .attraction .contents li {
+    width: 386px;
+    height: 386px;
+    padding-top: 258px;
+}
+.attraction_bg .attraction .contents li:nth-child(1) {background-image: url(../images/attraction_1.png);}
+.attraction_bg .attraction .contents li:nth-child(2) {background-image: url(../images/attraction_2.png);}
+.attraction_bg .attraction .contents li:nth-child(3) {background-image: url(../images/attraction_3.png);}
+.attraction_bg .attraction .contents li h3 {color:#fff; margin-bottom: 20px;}
+.attraction_bg .attraction .contents li p {color:#fff;}
+.attraction_bg .attraction .schedule_btn {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    gap: 10px;
+}
+.attraction_bg .attraction .schedule_btn img {width: 25px; height: 25px;}
+.attraction_bg .attraction .schedule_btn span {
+    color:#432C7A;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+/* 6. 퀴즈 */
+.quiz_bg {
+    background-color: #432C7A;
+}
+.quiz_bg .quiz {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.quiz_bg .quiz .left {
+    text-align: left;
+    display: flex;
+    flex-flow:column nowrap;
+    gap:50px;
+}
+.quiz_bg .quiz .left h2 {color:#FF8FB1;}
+.quiz_bg .quiz .left h3 {color:#fff;}
+.quiz_bg .quiz .left #quiz_frm {}
+.quiz_bg .quiz .left #quiz_frm fieldset {}
+.quiz_bg .quiz .left #quiz_frm fieldset label {margin-right: 50px;}
+.quiz_bg .quiz .left #quiz_frm fieldset label span {
+    background:url(../images/icon/unchecked_circle.png) no-repeat left;
+    padding-left:40px; height: 30px;
+    color:#fff; font-size: 1.75rem; letter-spacing: -0.02em;
+}
+.quiz_bg .quiz .left #quiz_frm fieldset label input:checked + span {background:url(../images/icon/check_circle.png) no-repeat left;}
+.quiz_bg .quiz .left #quiz_frm fieldset label input {
+    appearance: none;
+}
+.quiz_bg .quiz #answer_btn {
+    background-color: #FF8FB1;
+    border-radius: 30px;
+    display: flex;
+    height: 202px;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.quiz_bg .quiz #answer_btn span {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 40px;
+}
+.quiz_bg .quiz #answer_btn img {width: 58px; height: 58px;}
+/* 7. 레스토랑/굿즈 */
+.shop_bg {}
+.shop_bg .shop {
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+.shop_bg .shop h2 {color:#80489C;}
+.shop_bg .shop h2 span {}
+.shop_bg .shop .contents {}
+.shop_bg .shop .contents li {
+    position: relative;
+    display: flex;
+    flex-flow:row nowrap;
+    margin-bottom:70px;
+}
+.shop_bg .shop .contents li:last-child {margin-bottom: 100px;}
+.shop_bg .shop .contents li h3 {
+    color:#fff;
+    padding: 10px 30px;
+    position: absolute;
+    border-radius: 30px;
+}
+.shop_bg .shop .contents li:nth-child(odd) h3 {left:0; top:-30px;}
+.shop_bg .shop .contents li:nth-child(even) h3 {right:0; top:-30px;}
+.shop_bg .shop .contents li:nth-child(1) h3 {color:#1463AD; background-color: #FAE805;}
+.shop_bg .shop .contents li:nth-child(2) h3 {background-color: #3E2D1D;}
+.shop_bg .shop .contents li:nth-child(3) h3 {background-color: #FF2727;}
+.shop_bg .shop .contents li p {}
+.shop_bg .shop .contents li p img {}
+.shop_bg .shop .contents li:nth-child(odd) p img:first-child,
+.shop_bg .shop .contents li:nth-child(even) p img:last-child {width: 793px; height: 427px;}
+.shop_bg .shop .contents li:nth-child(odd) p img:last-child,
+.shop_bg .shop .contents li:nth-child(even) p img:first-child {width: 389px; height: 427px;}
+.shop_bg .shop .ticketing_btn {background-color: #80489C;}
+.shop_bg .shop .ticketing_btn span {color: #fff;}
+.shop_bg .shop .ticketing_btn img {}
+/* 8. 오시는길 */
+.route_bg {}
+.route_bg .route {
+    display: flex;
+    flex-flow:column nowrap;
+    text-align: left;
+}
+.route_bg .route h2 {color:#80489C; text-align: center;}
+.route_bg .route p {}
+.route_bg .route p img {height: 500px; margin-bottom: 50px;}
+.route_bg .route .contents {
+    width: 1200px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.route_bg .route .contents .train {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    width: 637px;
+}
+.route_bg .route .contents .train li {
+}
+.route_bg .route .contents .train li img {}
+.route_bg .route .contents .train li h3 {}
+.route_bg .route .contents .train li:nth-child(3) h3 {font-size: 1.3rem;}
+.route_bg .route .contents .train li p {margin-top: 20px;}
+.route_bg .route .contents .train li a {
+    display: block;
+    margin-top: 20px;
+}
+.route_bg .route .contents .bus {
+    width: 458px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.route_bg .route .contents .bus li {}
+.route_bg .route .contents .bus li img {
+    
+}
+.route_bg .route .contents .bus li h3 {}
+.route_bg .route .contents .bus li a {
+    display: block;
+    margin-top: 20px;
+}
+.route_bg .route > h3 {margin-bottom: 50px;}
+.route_bg .route .hotel {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.route_bg .route .hotel .item {
+    width: 587px; height: 272px;
+    padding:166px 30px 30px;
+    color:#fff;
+}
+.route_bg .route .hotel .item:nth-child(1) {background-image: url(../images/hotel_1.jpg);}
+.route_bg .route .hotel .item:nth-child(2) {background-image: url(../images/hotel_2.jpg); padding-top: 196px;}
+.route_bg .route .hotel .item h3 {font-size: 1.3rem;}
+.route_bg .route .hotel .item p {}
+/* 9. 자주묻는질문 */
+.faq_bg {
+    background-color: #432C7A;
+}
+.faq_bg .faq {}
+.faq_bg .faq .top {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.faq_bg .faq .top h2 {color:#FF8FB1;}
+.faq_bg .faq .top .service_center {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    gap: 10px;
+    position: absolute;
+    right: 0;
+}
+.faq_bg .faq .top .service_center img {width: 25px; height: 25px;}
+.faq_bg .faq .top .service_center span {color:#432C7A; font-size: 1.3rem; font-weight: 700;}
+.faq_bg .faq .btm {}
+.faq_bg .faq .btm li {
+    background-color: #fff;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 40px;
+}
+.faq_bg .faq .btm li h3 {}
+.faq_bg .faq .btm li h3 em {font-size: 2.35rem; font-weight: 700; letter-spacing: -0.02em; margin-right: 40px;}
+.faq_bg .faq .btm li h3 span {font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em;}
+.faq_bg .faq .btm li p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+.faq_bg .faq .btm li p em {font-size: 2.35rem; letter-spacing: -0.02em; margin-right: 40px;}
+.faq_bg .faq .btm li p span {font-size: 1.75rem; letter-spacing: -0.02em; line-height: 55px;}
