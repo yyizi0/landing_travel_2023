@@ -28,7 +28,12 @@ section > div .ticketing_btn img {
 }
 /* 1. title */
 .title_bg {
-    background:url(../images/title_bg.png) no-repeat center;
+    background:no-repeat center;
+    background-image:
+    url(../images/title_bg_2.png),
+    url(../images/title_bg_1.png),
+    url(../images/title_bg_3.png);
+    background-attachment: scroll, scroll, fixed;
     background-size:cover;
 }
 .title_bg .title {
